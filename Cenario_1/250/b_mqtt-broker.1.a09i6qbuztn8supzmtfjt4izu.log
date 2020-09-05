@@ -1,0 +1,14 @@
+2020-09-05T11:14:58.154688299Z  1599304498: mosquitto version 1.6.10 starting
+2020-09-05T11:14:58.154738107Z  1599304498: Config loaded from /mosquitto/config/mosquitto.conf.
+2020-09-05T11:14:58.154752806Z  1599304498: Opening ipv4 listen socket on port 1883.
+2020-09-05T11:14:58.154766725Z  1599304498: Opening ipv6 listen socket on port 1883.
+2020-09-05T11:15:03.449637841Z  1599304503: New connection from 10.0.45.4 on port 1883.
+2020-09-05T11:15:03.450418974Z  1599304503: New client connected from 10.0.45.4 as fEoRo5ojSR (p2, c1, k30).
+2020-09-05T11:15:07.812890600Z  1599304507: New connection from 10.0.45.4 on port 1883.
+2020-09-05T11:15:07.812934712Z  1599304507: New client connected from 10.0.45.4 as twin-38162cb0-e585-43d7-b55d-5c240b2bfb7c (p2, c1, k30).
+2020-09-05T11:15:37.971427261Z  1599304537: Socket error on client twin-38162cb0-e585-43d7-b55d-5c240b2bfb7c, disconnecting.
+2020-09-05T11:15:47.792032656Z  1599304547: New connection from 10.0.45.4 on port 1883.
+2020-09-05T11:15:47.792055351Z  1599304547: New client connected from 10.0.45.4 as twin-38162cb0-e585-43d7-b55d-5c240b2bfb7c (p2, c1, k30).
+2020-09-05T11:16:17.953622415Z  1599304577: Socket error on client twin-38162cb0-e585-43d7-b55d-5c240b2bfb7c, disconnecting.
+2020-09-05T11:16:26.969365744Z  1599304586: New connection from 10.0.45.4 on port 1883.
+2020-09-05T11:16:26.969560310Z  1599304586: New client connected from 10.0.45.4 as twin-38162cb0-e585-43d7-b55d-5c240b2bfb7c (p2, c1, k30).
