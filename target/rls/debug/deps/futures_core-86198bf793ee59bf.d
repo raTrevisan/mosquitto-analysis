@@ -1,0 +1,11 @@
+c:\Users\rafat\mosquitto-analysis\communication\target\rls\debug\deps\futures_core-86198bf793ee59bf.rmeta: C:\Users\rafat\.cargo\registry\src\github.com-1ecc6299db9ec823\futures-core-0.3.5\src\lib.rs C:\Users\rafat\.cargo\registry\src\github.com-1ecc6299db9ec823\futures-core-0.3.5\src\future.rs C:\Users\rafat\.cargo\registry\src\github.com-1ecc6299db9ec823\futures-core-0.3.5\src\stream.rs C:\Users\rafat\.cargo\registry\src\github.com-1ecc6299db9ec823\futures-core-0.3.5\src\task\mod.rs C:\Users\rafat\.cargo\registry\src\github.com-1ecc6299db9ec823\futures-core-0.3.5\src\task\poll.rs C:\Users\rafat\.cargo\registry\src\github.com-1ecc6299db9ec823\futures-core-0.3.5\src\task\__internal\mod.rs C:\Users\rafat\.cargo\registry\src\github.com-1ecc6299db9ec823\futures-core-0.3.5\src\task\__internal\atomic_waker.rs
+
+c:\Users\rafat\mosquitto-analysis\communication\target\rls\debug\deps\futures_core-86198bf793ee59bf.d: C:\Users\rafat\.cargo\registry\src\github.com-1ecc6299db9ec823\futures-core-0.3.5\src\lib.rs C:\Users\rafat\.cargo\registry\src\github.com-1ecc6299db9ec823\futures-core-0.3.5\src\future.rs C:\Users\rafat\.cargo\registry\src\github.com-1ecc6299db9ec823\futures-core-0.3.5\src\stream.rs C:\Users\rafat\.cargo\registry\src\github.com-1ecc6299db9ec823\futures-core-0.3.5\src\task\mod.rs C:\Users\rafat\.cargo\registry\src\github.com-1ecc6299db9ec823\futures-core-0.3.5\src\task\poll.rs C:\Users\rafat\.cargo\registry\src\github.com-1ecc6299db9ec823\futures-core-0.3.5\src\task\__internal\mod.rs C:\Users\rafat\.cargo\registry\src\github.com-1ecc6299db9ec823\futures-core-0.3.5\src\task\__internal\atomic_waker.rs
+
+C:\Users\rafat\.cargo\registry\src\github.com-1ecc6299db9ec823\futures-core-0.3.5\src\lib.rs:
+C:\Users\rafat\.cargo\registry\src\github.com-1ecc6299db9ec823\futures-core-0.3.5\src\future.rs:
+C:\Users\rafat\.cargo\registry\src\github.com-1ecc6299db9ec823\futures-core-0.3.5\src\stream.rs:
+C:\Users\rafat\.cargo\registry\src\github.com-1ecc6299db9ec823\futures-core-0.3.5\src\task\mod.rs:
+C:\Users\rafat\.cargo\registry\src\github.com-1ecc6299db9ec823\futures-core-0.3.5\src\task\poll.rs:
+C:\Users\rafat\.cargo\registry\src\github.com-1ecc6299db9ec823\futures-core-0.3.5\src\task\__internal\mod.rs:
+C:\Users\rafat\.cargo\registry\src\github.com-1ecc6299db9ec823\futures-core-0.3.5\src\task\__internal\atomic_waker.rs:

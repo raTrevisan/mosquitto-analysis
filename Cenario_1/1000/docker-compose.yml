@@ -20,7 +20,7 @@ services:
       replicas: 1
       placement:    
         constraints:
-          - node.labels.name==client
+          - node.labels.name==cloud
     command: dt-client-bytes
   twin:
     image: "opendigitaltwin/dt-instance:latest"
