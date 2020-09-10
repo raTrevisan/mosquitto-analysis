@@ -57,7 +57,7 @@ services:
       - DB_ADDRESS=scylla-db:9042
       - TWIN_INSTANCE=38162cb0-e585-43d7-b55d-5c240b2bfb7c
     networks:
-      - default
+      default:
     restart: always
     deploy:
       placement:    
