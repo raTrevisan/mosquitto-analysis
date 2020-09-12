@@ -1,0 +1,344 @@
+2020-09-12T21:02:54.310254946Z  running: (['/opt/scylladb/scripts/scylla_dev_mode_setup', '--developer-mode', '1'],)
+2020-09-12T21:02:54.789136990Z  running: (['/opt/scylladb/scripts/scylla_io_setup'],)
+2020-09-12T21:02:55.158815943Z  2020-09-12 21:02:55,158 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-09-12T21:02:55.158976738Z  2020-09-12 21:02:55,158 INFO Included extra file "/etc/supervisord.conf.d/node-exporter.conf" during parsing
+2020-09-12T21:02:55.158990967Z  2020-09-12 21:02:55,158 INFO Included extra file "/etc/supervisord.conf.d/rsyslog.conf" during parsing
+2020-09-12T21:02:55.159036654Z  2020-09-12 21:02:55,158 INFO Included extra file "/etc/supervisord.conf.d/scylla-housekeeping.conf" during parsing
+2020-09-12T21:02:55.159048097Z  2020-09-12 21:02:55,158 INFO Included extra file "/etc/supervisord.conf.d/scylla-jmx.conf" during parsing
+2020-09-12T21:02:55.159104598Z  2020-09-12 21:02:55,158 INFO Included extra file "/etc/supervisord.conf.d/scylla-server.conf" during parsing
+2020-09-12T21:02:55.159119761Z  2020-09-12 21:02:55,158 INFO Included extra file "/etc/supervisord.conf.d/sshd-server.conf" during parsing
+2020-09-12T21:02:55.194824935Z  2020-09-12 21:02:55,194 INFO RPC interface 'supervisor' initialized
+2020-09-12T21:02:55.194941607Z  2020-09-12 21:02:55,194 CRIT Server 'inet_http_server' running without any HTTP authentication checking
+2020-09-12T21:02:55.195283613Z  2020-09-12 21:02:55,195 INFO supervisord started with pid 25
+2020-09-12T21:02:56.200174237Z  2020-09-12 21:02:56,199 INFO spawned: 'scylla' with pid 28
+2020-09-12T21:02:56.204724010Z  2020-09-12 21:02:56,203 INFO spawned: 'scylla-housekeeping' with pid 29
+2020-09-12T21:02:56.209922550Z  2020-09-12 21:02:56,209 INFO spawned: 'sshd' with pid 30
+2020-09-12T21:02:56.220163540Z  2020-09-12 21:02:56,219 INFO spawned: 'scylla-jmx' with pid 32
+2020-09-12T21:02:56.222791842Z  2020-09-12 21:02:56,222 INFO spawned: 'rsyslog' with pid 34
+2020-09-12T21:02:56.230468002Z  2020-09-12 21:02:56,230 INFO spawned: 'node-exporter' with pid 36
+2020-09-12T21:02:56.265581581Z  Generating public/private ed25519 key pair.
+2020-09-12T21:02:56.265611870Z  Your identification has been saved in /etc/ssh/ssh_host_ed25519_key.
+2020-09-12T21:02:56.265647856Z  Your public key has been saved in /etc/ssh/ssh_host_ed25519_key.pub.
+2020-09-12T21:02:56.265658224Z  The key fingerprint is:
+2020-09-12T21:02:56.265667188Z  SHA256:RrUzGp9O0MVk46UXvX142m7aHSTB6DVe+dmx9qAZKN4 root@76a4cbc84aa8
+2020-09-12T21:02:56.265676371Z  The key's randomart image is:
+2020-09-12T21:02:56.265685320Z  +--[ED25519 256]--+
+2020-09-12T21:02:56.265694224Z  |          .o= o. |
+2020-09-12T21:02:56.265723064Z  |         o =++ .o|
+2020-09-12T21:02:56.265735462Z  |        + =.o=.=o|
+2020-09-12T21:02:56.265744488Z  |       . =.=o.=.X|
+2020-09-12T21:02:56.265753187Z  |        S =..o.O+|
+2020-09-12T21:02:56.265774065Z  |       o =   +=.o|
+2020-09-12T21:02:56.265784212Z  |        . E o  o.|
+2020-09-12T21:02:56.265818108Z  |               .=|
+2020-09-12T21:02:56.265827705Z  |              .oo|
+2020-09-12T21:02:56.265836617Z  +----[SHA256]-----+
+2020-09-12T21:02:56.274845602Z  time="2020-09-12T21:02:56Z" level=info msg="Starting node_exporter (version=0.17.0, branch=HEAD, revision=f6f6194a436b9a63d0439abc585c76b19a206b21)" source="node_exporter.go:82"
+2020-09-12T21:02:56.274880195Z  time="2020-09-12T21:02:56Z" level=info msg="Build context (go=go1.11.2, user=root@322511e06ced, date=20181130-15:51:33)" source="node_exporter.go:83"
+2020-09-12T21:02:56.276151292Z  time="2020-09-12T21:02:56Z" level=info msg="Enabled collectors:" source="node_exporter.go:90"
+2020-09-12T21:02:56.276421186Z  time="2020-09-12T21:02:56Z" level=info msg=" - arp" source="node_exporter.go:97"
+2020-09-12T21:02:56.276439774Z  time="2020-09-12T21:02:56Z" level=info msg=" - bcache" source="node_exporter.go:97"
+2020-09-12T21:02:56.276768359Z  time="2020-09-12T21:02:56Z" level=info msg=" - bonding" source="node_exporter.go:97"
+2020-09-12T21:02:56.276810154Z  time="2020-09-12T21:02:56Z" level=info msg=" - conntrack" source="node_exporter.go:97"
+2020-09-12T21:02:56.276822686Z  time="2020-09-12T21:02:56Z" level=info msg=" - cpu" source="node_exporter.go:97"
+2020-09-12T21:02:56.276832331Z  time="2020-09-12T21:02:56Z" level=info msg=" - diskstats" source="node_exporter.go:97"
+2020-09-12T21:02:56.277009870Z  time="2020-09-12T21:02:56Z" level=info msg=" - edac" source="node_exporter.go:97"
+2020-09-12T21:02:56.277028249Z  time="2020-09-12T21:02:56Z" level=info msg=" - entropy" source="node_exporter.go:97"
+2020-09-12T21:02:56.277347310Z  time="2020-09-12T21:02:56Z" level=info msg=" - filefd" source="node_exporter.go:97"
+2020-09-12T21:02:56.277386992Z  time="2020-09-12T21:02:56Z" level=info msg=" - filesystem" source="node_exporter.go:97"
+2020-09-12T21:02:56.277398897Z  time="2020-09-12T21:02:56Z" level=info msg=" - hwmon" source="node_exporter.go:97"
+2020-09-12T21:02:56.277408355Z  time="2020-09-12T21:02:56Z" level=info msg=" - infiniband" source="node_exporter.go:97"
+2020-09-12T21:02:56.277603530Z  time="2020-09-12T21:02:56Z" level=info msg=" - interrupts" source="node_exporter.go:97"
+2020-09-12T21:02:56.277621229Z  time="2020-09-12T21:02:56Z" level=info msg=" - ipvs" source="node_exporter.go:97"
+2020-09-12T21:02:56.277929393Z  time="2020-09-12T21:02:56Z" level=info msg=" - loadavg" source="node_exporter.go:97"
+2020-09-12T21:02:56.277946717Z  time="2020-09-12T21:02:56Z" level=info msg=" - mdadm" source="node_exporter.go:97"
+2020-09-12T21:02:56.277956254Z  time="2020-09-12T21:02:56Z" level=info msg=" - meminfo" source="node_exporter.go:97"
+2020-09-12T21:02:56.277989983Z  time="2020-09-12T21:02:56Z" level=info msg=" - netclass" source="node_exporter.go:97"
+2020-09-12T21:02:56.278161466Z  time="2020-09-12T21:02:56Z" level=info msg=" - netdev" source="node_exporter.go:97"
+2020-09-12T21:02:56.278193270Z  time="2020-09-12T21:02:56Z" level=info msg=" - netstat" source="node_exporter.go:97"
+2020-09-12T21:02:56.278521734Z  time="2020-09-12T21:02:56Z" level=info msg=" - nfs" source="node_exporter.go:97"
+2020-09-12T21:02:56.278563507Z  time="2020-09-12T21:02:56Z" level=info msg=" - nfsd" source="node_exporter.go:97"
+2020-09-12T21:02:56.278574073Z  time="2020-09-12T21:02:56Z" level=info msg=" - sockstat" source="node_exporter.go:97"
+2020-09-12T21:02:56.278583631Z  time="2020-09-12T21:02:56Z" level=info msg=" - stat" source="node_exporter.go:97"
+2020-09-12T21:02:56.278764597Z  time="2020-09-12T21:02:56Z" level=info msg=" - textfile" source="node_exporter.go:97"
+2020-09-12T21:02:56.278782952Z  time="2020-09-12T21:02:56Z" level=info msg=" - time" source="node_exporter.go:97"
+2020-09-12T21:02:56.278792838Z  time="2020-09-12T21:02:56Z" level=info msg=" - timex" source="node_exporter.go:97"
+2020-09-12T21:02:56.279176761Z  time="2020-09-12T21:02:56Z" level=info msg=" - uname" source="node_exporter.go:97"
+2020-09-12T21:02:56.279218967Z  time="2020-09-12T21:02:56Z" level=info msg=" - vmstat" source="node_exporter.go:97"
+2020-09-12T21:02:56.279229850Z  time="2020-09-12T21:02:56Z" level=info msg=" - xfs" source="node_exporter.go:97"
+2020-09-12T21:02:56.279239009Z  time="2020-09-12T21:02:56Z" level=info msg=" - zfs" source="node_exporter.go:97"
+2020-09-12T21:02:56.279247862Z  time="2020-09-12T21:02:56Z" level=info msg="Listening on :9100" source="node_exporter.go:111"
+2020-09-12T21:02:56.645222862Z  Scylla version 4.1.6-0.20200831.6d9ff622df with build-id c2ed04d00095c63b7456b5fcda6775c5a9f33b0b starting ...
+2020-09-12T21:02:56.645270305Z  command used: "/usr/bin/scylla --log-to-syslog 0 --log-to-stdout 1 --default-log-level info --network-stack posix --developer-mode=1 --overprovisioned --listen-address 10.0.9.10 --rpc-address 10.0.9.10 --seed-provider-parameters seeds=10.0.9.10 --blocked-reactor-notify-ms 999999999"
+2020-09-12T21:02:56.645281595Z  parsed command line options: [log-to-syslog: 0, log-to-stdout: 1, default-log-level: info, network-stack: posix, developer-mode: 1, overprovisioned, listen-address: 10.0.9.10, rpc-address: 10.0.9.10, seed-provider-parameters: seeds=10.0.9.10, blocked-reactor-notify-ms: 999999999]
+2020-09-12T21:02:56.678754740Z  WARN  2020-09-12 21:02:56,678 [shard 0] seastar - Unable to set SCHED_FIFO scheduling policy for timer thread; latency impact possible. Try adding CAP_SYS_NICE
+2020-09-12T21:02:56.701730258Z  INFO  2020-09-12 21:02:56,701 [shard 0] init - installing SIGHUP handler
+2020-09-12T21:02:56.705900062Z  INFO  2020-09-12 21:02:56,705 [shard 0] init - Scylla version 4.1.6-0.20200831.6d9ff622df with build-id c2ed04d00095c63b7456b5fcda6775c5a9f33b0b starting ...
+2020-09-12T21:02:56.705944732Z  
+2020-09-12T21:02:56.708515075Z  INFO  2020-09-12 21:02:56,708 [shard 0] init - starting prometheus API server
+2020-09-12T21:02:56.711831782Z  INFO  2020-09-12 21:02:56,711 [shard 0] init - starting tokens manager
+2020-09-12T21:02:56.712508999Z  INFO  2020-09-12 21:02:56,712 [shard 0] init - starting migration manager notifier
+2020-09-12T21:02:56.712972231Z  INFO  2020-09-12 21:02:56,712 [shard 0] init - creating tracing
+2020-09-12T21:02:56.713460112Z  INFO  2020-09-12 21:02:56,713 [shard 0] init - creating snitch
+2020-09-12T21:02:56.714181854Z  INFO  2020-09-12 21:02:56,713 [shard 0] init - determining DNS name
+2020-09-12T21:02:56.714223718Z  INFO  2020-09-12 21:02:56,713 [shard 0] init - starting API server
+2020-09-12T21:02:56.714904471Z  INFO  2020-09-12 21:02:56,714 [shard 0] init - Scylla API server listening on 127.0.0.1:10000 ...
+2020-09-12T21:02:56.716419340Z  INFO  2020-09-12 21:02:56,716 [shard 0] init - initializing storage service
+2020-09-12T21:02:56.718016871Z  INFO  2020-09-12 21:02:56,717 [shard 0] init - starting per-shard database core
+2020-09-12T21:02:56.721993537Z  WARN  2020-09-12 21:02:56,721 [shard 0] init - I/O Scheduler is not properly configured! This is a non-supported setup, and performance is expected to be unpredictably bad.
+2020-09-12T21:02:56.722055617Z   Reason found: none of --max-io-requests, --io-properties and --io-properties-file are set.
+2020-09-12T21:02:56.722087575Z  To properly configure the I/O Scheduler, run the scylla_io_setup utility shipped with Scylla.
+2020-09-12T21:02:56.722097395Z  
+2020-09-12T21:02:56.722434221Z  INFO  2020-09-12 21:02:56,722 [shard 0] init - creating and verifying directories
+2020-09-12T21:02:57.071457417Z  INFO  2020-09-12 21:02:57,070 [shard 0] database - Populating Keyspace system_schema
+2020-09-12T21:02:57.071510412Z  INFO  2020-09-12 21:02:57,070 [shard 0] database - Keyspace system_schema: Reading CF computed_columns id=cc7c7069-3740-33c1-92a4-c3de78dbd2c4 version=2b8c4439-de76-31e0-807f-3b7290a975d7
+2020-09-12T21:02:57.071522732Z  INFO  2020-09-12 21:02:57,070 [shard 0] database - Keyspace system_schema: Reading CF view_virtual_columns id=08843b63-45dc-3be2-9798-a0418295cfaa version=c777531c-15f7-326f-8ebe-39fd0265c8c9
+2020-09-12T21:02:57.071532464Z  INFO  2020-09-12 21:02:57,070 [shard 0] database - Keyspace system_schema: Reading CF dropped_columns id=5e7583b5-f3f4-3af1-9a39-b7e1d6f5f11f version=7426bc6c-4c2f-3200-8ad8-4329610ed59a
+2020-09-12T21:02:57.071541688Z  INFO  2020-09-12 21:02:57,070 [shard 0] database - Keyspace system_schema: Reading CF indexes id=0feb57ac-311f-382f-ba6d-9024d305702f version=99c40462-8687-304e-abe3-2bdbef1f25aa
+2020-09-12T21:02:57.071551021Z  INFO  2020-09-12 21:02:57,070 [shard 0] database - Keyspace system_schema: Reading CF functions id=96489b79-80be-3e14-a701-66a0b9159450 version=329ed804-55b3-3eee-ad61-d85317b96097
+2020-09-12T21:02:57.071559925Z  INFO  2020-09-12 21:02:57,070 [shard 0] database - Keyspace system_schema: Reading CF columns id=24101c25-a2ae-3af7-87c1-b40ee1aca33f version=d33236d4-9bdd-3c09-abf0-a0bc5edc2526
+2020-09-12T21:02:57.071568854Z  INFO  2020-09-12 21:02:57,070 [shard 0] database - Keyspace system_schema: Reading CF scylla_tables id=5d912ff1-f759-3665-b2c8-8042ab5103dd version=38e5e56b-155d-39b5-a0d2-8e5dcad42a26
+2020-09-12T21:02:57.071578151Z  INFO  2020-09-12 21:02:57,070 [shard 0] database - Keyspace system_schema: Reading CF tables id=afddfb9d-bc1e-3068-8056-eed6c302ba09 version=b6240810-eeb7-36d5-9411-43b2d68dddab
+2020-09-12T21:02:57.071587168Z  INFO  2020-09-12 21:02:57,070 [shard 0] database - Keyspace system_schema: Reading CF keyspaces id=abac5682-dea6-31c5-b535-b3d6cffd0fb6 version=e79ca8ba-6556-3f7d-925a-7f20cf57938c
+2020-09-12T21:02:57.071612825Z  INFO  2020-09-12 21:02:57,070 [shard 0] database - Keyspace system_schema: Reading CF triggers id=4df70b66-6b05-3251-95a1-32b54005fd48 version=582d7071-1ef0-37c8-adc6-471a13636139
+2020-09-12T21:02:57.071624755Z  INFO  2020-09-12 21:02:57,070 [shard 0] database - Keyspace system_schema: Reading CF views id=9786ac1c-dd58-3201-a7cd-ad556410c985 version=5b58bb47-96e7-3f57-accf-0bfca4dbbc6e
+2020-09-12T21:02:57.071634360Z  INFO  2020-09-12 21:02:57,070 [shard 0] database - Keyspace system_schema: Reading CF types id=5a8b1ca8-6602-3f77-a045-9273d308917a version=de51b2ce-5e4d-3b7d-a75f-2204332ce8d1
+2020-09-12T21:02:57.071643684Z  INFO  2020-09-12 21:02:57,070 [shard 0] database - Keyspace system_schema: Reading CF aggregates id=924c5587-2e3a-345b-b10c-12f37c1ba895 version=4b53e92c-0368-3d5c-b959-2ec1bfd1a59f
+2020-09-12T21:02:57.279548219Z  Generating public/private rsa key pair.
+2020-09-12T21:02:57.279575850Z  Your identification has been saved in /etc/ssh/ssh_host_rsa_key.
+2020-09-12T21:02:57.279586012Z  Your public key has been saved in /etc/ssh/ssh_host_rsa_key.pub.
+2020-09-12T21:02:57.279594986Z  The key fingerprint is:
+2020-09-12T21:02:57.279603466Z  SHA256:rPAw8a8VTn2wwZO07nzXND7LBQc5YESPnG1PKA/46Ys root@76a4cbc84aa8
+2020-09-12T21:02:57.279612110Z  The key's randomart image is:
+2020-09-12T21:02:57.279620530Z  +---[RSA 4096]----+
+2020-09-12T21:02:57.279628950Z  |          .o=    |
+2020-09-12T21:02:57.279637106Z  |         o * * o |
+2020-09-12T21:02:57.279645151Z  |    .     O * O .|
+2020-09-12T21:02:57.279653326Z  |     o . o * * = |
+2020-09-12T21:02:57.279661609Z  |    + . S + + o.+|
+2020-09-12T21:02:57.279669651Z  |     = = + o  .=.|
+2020-09-12T21:02:57.279677646Z  |      o + o o .oo|
+2020-09-12T21:02:57.279685891Z  |       o   o o. +|
+2020-09-12T21:02:57.279694061Z  |      .   E .  o |
+2020-09-12T21:02:57.279702109Z  +----[SHA256]-----+
+2020-09-12T21:02:57.280117361Z  2020-09-12 21:02:57,279 INFO success: scylla entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2020-09-12T21:02:57.280138865Z  2020-09-12 21:02:57,279 INFO success: scylla-housekeeping entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2020-09-12T21:02:57.280313441Z  2020-09-12 21:02:57,280 INFO success: sshd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2020-09-12T21:02:57.280609874Z  2020-09-12 21:02:57,280 INFO success: scylla-jmx entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2020-09-12T21:02:57.280628102Z  2020-09-12 21:02:57,280 INFO success: rsyslog entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2020-09-12T21:02:57.280796559Z  2020-09-12 21:02:57,280 INFO success: node-exporter entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2020-09-12T21:02:57.301304172Z  Could not load host key: /etc/ssh/ssh_host_ecdsa_key
+2020-09-12T21:02:57.371414755Z  Connecting to http://localhost:10000
+2020-09-12T21:02:57.372030684Z  Starting the JMX server
+2020-09-12T21:02:57.981856851Z  JMX is enabled to receive remote connections on port: 7199
+2020-09-12T21:03:01.899046550Z  Traceback (most recent call last):
+2020-09-12T21:03:01.899142601Z    File "/opt/scylladb/scripts/libexec/scylla-housekeeping", line 208, in <module>
+2020-09-12T21:03:01.899211082Z      args.func(args)
+2020-09-12T21:03:01.899230765Z    File "/opt/scylladb/scripts/libexec/scylla-housekeeping", line 134, in check_version
+2020-09-12T21:03:01.899248549Z      current_version = sanitize_version(get_api('/storage_service/scylla_release_version'))
+2020-09-12T21:03:01.899304670Z    File "/opt/scylladb/scripts/libexec/scylla-housekeeping", line 93, in get_api
+2020-09-12T21:03:01.899324436Z      return get_json_from_url("http://" + api_address + path)
+2020-09-12T21:03:01.899342090Z    File "/opt/scylladb/scripts/libexec/scylla-housekeeping", line 88, in get_json_from_url
+2020-09-12T21:03:01.899396270Z      raise RuntimeError(f'Failed to get "{path}" due to the following error: {retval}')
+2020-09-12T21:03:01.899417703Z  RuntimeError: Failed to get "http://localhost:10000/storage_service/scylla_release_version" due to the following error: HTTP Error 404: Not Found
+2020-09-12T21:03:07.383531404Z  INFO  2020-09-12 21:03:07,382 [shard 0] database - Found temporary sstable directory: "/var/lib/scylla/data/system_schema/tables-afddfb9dbc1e30688056eed6c302ba09/0000000000000153.sstable", removing
+2020-09-12T21:03:07.383590864Z  INFO  2020-09-12 21:03:07,382 [shard 0] database - Found temporary sstable directory: "/var/lib/scylla/data/system_schema/views-9786ac1cdd583201a7cdad556410c985/0000000000000087.sstable", removing
+2020-09-12T21:03:07.383603842Z  INFO  2020-09-12 21:03:07,382 [shard 0] database - Found temporary sstable directory: "/var/lib/scylla/data/system_schema/types-5a8b1ca866023f77a0459273d308917a/0000000000000081.sstable", removing
+2020-09-12T21:03:07.383613479Z  INFO  2020-09-12 21:03:07,382 [shard 0] database - Found temporary sstable directory: "/var/lib/scylla/data/system_schema/aggregates-924c55872e3a345bb10c12f37c1ba895/0000000000000077.sstable", removing
+2020-09-12T21:03:07.385071623Z  INFO  2020-09-12 21:03:07,384 [shard 0] database - Found temporary sstable directory: "/var/lib/scylla/data/system_schema/scylla_tables-5d912ff1f7593665b2c88042ab5103dd/0000000000000151.sstable", removing
+2020-09-12T21:03:07.394432095Z  WARN  2020-09-12 21:03:07,394 [shard 0] sstable - Deleting components of sstable from system_schema.types of generation 81 that has a temporary TOC
+2020-09-12T21:03:07.706854706Z  WARN  2020-09-12 21:03:07,705 [shard 0] sstable - Deleting components of sstable from system_schema.views of generation 87 that has a temporary TOC
+2020-09-12T21:03:07.706900349Z  WARN  2020-09-12 21:03:07,706 [shard 0] sstable - Deleting components of sstable from system_schema.tables of generation 153 that has a temporary TOC
+2020-09-12T21:03:07.706942416Z  WARN  2020-09-12 21:03:07,706 [shard 0] sstable - Deleting components of sstable from system_schema.scylla_tables of generation 151 that has a temporary TOC
+2020-09-12T21:03:08.581155489Z  INFO  2020-09-12 21:03:08,580 [shard 0] database - Populating Keyspace system
+2020-09-12T21:03:08.581600515Z  INFO  2020-09-12 21:03:08,581 [shard 0] database - Keyspace system: Reading CF schema_aggregates id=a5fc57fc-9d6c-3bfd-a3fc-01ad54686fea version=d06c934f-9a69-374c-86f1-523ab26fb05c
+2020-09-12T21:03:08.581624947Z  INFO  2020-09-12 21:03:08,581 [shard 0] database - Keyspace system: Reading CF schema_triggers id=0359bc71-7123-3ee1-9a4a-b9dfb11fc125 version=75e4ec4c-76da-3f59-984e-66810ba0c62b
+2020-09-12T21:03:08.581636507Z  INFO  2020-09-12 21:03:08,581 [shard 0] database - Keyspace system: Reading CF compaction_history id=b4dbb7b4-dc49-3fb5-b3bf-ce6e434832ca version=25cae56a-8d75-39f3-a146-3756ab4981c7
+2020-09-12T21:03:08.581646574Z  INFO  2020-09-12 21:03:08,581 [shard 0] database - Keyspace system: Reading CF compactions_in_progress id=55080ab0-5d9c-3886-90a4-acb25fe1f77b version=540263f1-40db-3869-8a38-3baadedc222d
+2020-09-12T21:03:08.581656594Z  INFO  2020-09-12 21:03:08,581 [shard 0] database - Keyspace system: Reading CF range_xfers id=55d76438-4e55-3f8b-9f6e-676d4af3976d version=dd15a078-409b-350d-9bef-c5f3520832d8
+2020-09-12T21:03:08.581688926Z  INFO  2020-09-12 21:03:08,581 [shard 0] database - Keyspace system: Reading CF scylla_views_builds_in_progress id=a04c7bfd-1e13-36c9-a44d-f22da352281d version=e3fb736c-6956-3990-a31d-9a482279e3fc
+2020-09-12T21:03:08.581700046Z  INFO  2020-09-12 21:03:08,581 [shard 0] database - Keyspace system: Reading CF IndexInfo id=9f5c6374-d485-3229-9a0a-5094af9ad1e3 version=bbb3743b-351f-3023-b4fc-09a9be37d529
+2020-09-12T21:03:08.582118186Z  INFO  2020-09-12 21:03:08,581 [shard 0] database - Keyspace system: Reading CF cdc_local id=0bcaffd4-0c83-3ead-ad13-dc1d5015b77c version=0aa4d3a2-ed95-3ecd-aba0-cd75622ad290
+2020-09-12T21:03:08.582148425Z  INFO  2020-09-12 21:03:08,581 [shard 0] database - Keyspace system: Reading CF schema_columnfamilies id=45f5b360-24bc-3f83-a363-1034ea4fa697 version=7f7a5fea-07b7-304d-a6f8-f7aec72cabdb
+2020-09-12T21:03:08.582158455Z  INFO  2020-09-12 21:03:08,581 [shard 0] database - Keyspace system: Reading CF batchlog id=0290003c-977e-397c-ac3e-fdfdc01d626b version=e2a2e804-49e4-3597-9f16-39fd9475835c
+2020-09-12T21:03:08.582168572Z  INFO  2020-09-12 21:03:08,581 [shard 0] database - Keyspace system: Reading CF schema_functions id=d1b675fe-2b50-3ca4-8e49-c0f81989dcad version=a50959dd-2be0-3e4e-8bb5-cf40796e256a
+2020-09-12T21:03:08.582177942Z  INFO  2020-09-12 21:03:08,581 [shard 0] database - Keyspace system: Reading CF peer_events id=59dfeaea-8db2-3341-91ef-109974d81484 version=7f874a05-72b8-3c21-9acb-baa164fc351a
+2020-09-12T21:03:08.582187189Z  INFO  2020-09-12 21:03:08,581 [shard 0] database - Keyspace system: Reading CF local id=7ad54392-bcdd-35a6-8417-4e047860b377 version=7fa82c2e-5b67-37dd-8e5e-2079e18f1536
+2020-09-12T21:03:08.582196515Z  INFO  2020-09-12 21:03:08,581 [shard 0] database - Keyspace system: Reading CF clients id=ca0f635d-8630-3609-8d93-a1fc06f2a5e5 version=51273ebf-e6f9-3cd5-b455-ea09ad29796f
+2020-09-12T21:03:08.582205591Z  INFO  2020-09-12 21:03:08,581 [shard 0] database - Keyspace system: Reading CF size_estimates id=618f817b-005f-3678-b8a4-53f3930b8e86 version=6d4dbcff-f05b-3dc3-95ad-f79f7b10504d
+2020-09-12T21:03:08.582214662Z  INFO  2020-09-12 21:03:08,581 [shard 0] database - Keyspace system: Reading CF large_partitions id=8a7fe624-96b0-34b1-b90e-f71bddcdd2d3 version=04fa9920-9369-3a96-be39-6dd9fdc816b6
+2020-09-12T21:03:08.582235545Z  INFO  2020-09-12 21:03:08,581 [shard 0] database - Keyspace system: Reading CF schema_columns id=296e9c04-9bec-3085-827d-c17d3df2122a version=53cfbb66-ee0d-37be-97bb-b2afb3746f85
+2020-09-12T21:03:08.582246198Z  INFO  2020-09-12 21:03:08,581 [shard 0] database - Keyspace system: Reading CF built_views id=4b3c50a9-ea87-3d76-9101-6dbc9c38494a version=a28aa0b3-6def-30a7-9fbe-ce78b3f3c9b9
+2020-09-12T21:03:08.582256685Z  INFO  2020-09-12 21:03:08,581 [shard 0] database - Keyspace system: Reading CF peers id=37f71aca-7dc2-383b-a706-72528af04d4f version=f6f6871f-8c86-3eca-ac0b-2a2e848e395d
+2020-09-12T21:03:08.582266483Z  INFO  2020-09-12 21:03:08,581 [shard 0] database - Keyspace system: Reading CF hints id=2666e205-73ef-38b3-90fe-fecf96e8f0c7 version=0b74fdd1-e96d-309e-a14e-a5bcd7ac885d
+2020-09-12T21:03:08.582275662Z  INFO  2020-09-12 21:03:08,581 [shard 0] database - Keyspace system: Reading CF large_rows id=40550f66-0858-39a0-9430-f27fc08034e9 version=aee3acb0-7926-317b-848e-db7bc3721695
+2020-09-12T21:03:08.582284575Z  INFO  2020-09-12 21:03:08,581 [shard 0] database - Keyspace system: Reading CF large_cells id=ead8bbc5-f146-3ae1-9f71-0b11f9a1d296 version=0d4a6937-a781-3f87-a192-b4e4a4a40acf
+2020-09-12T21:03:08.582293864Z  INFO  2020-09-12 21:03:08,581 [shard 0] database - Keyspace system: Reading CF scylla_local id=2972ec7f-fb20-38dd-aac1-d876f2e3fcbd version=5f0b407d-eedf-3845-a48e-dbb9673d10e1
+2020-09-12T21:03:08.582303065Z  INFO  2020-09-12 21:03:08,581 [shard 0] database - Keyspace system: Reading CF views_builds_in_progress id=b7f2c108-78cd-3c80-9cd5-d609b2bd149c version=b905cce5-1474-3085-819a-7592453e2fb9
+2020-09-12T21:03:08.582312434Z  INFO  2020-09-12 21:03:08,581 [shard 0] database - Keyspace system: Reading CF schema_usertypes id=3aa75225-4f82-350b-8d5c-430fa221fa0a version=3c53e6bb-56d5-3618-a0b2-4ff5f18127d7
+2020-09-12T21:03:08.582321865Z  INFO  2020-09-12 21:03:08,581 [shard 0] database - Keyspace system: Reading CF sstable_activity id=5a1ff267-ace0-3f12-8563-cfae6103c65e version=bdec57a3-b234-334b-be9c-7b1f33113995
+2020-09-12T21:03:08.582331302Z  INFO  2020-09-12 21:03:08,581 [shard 0] database - Keyspace system: Reading CF truncated id=38c19fd0-fb86-3310-a4b7-0d0cc66628aa version=6da9a85c-7ae0-3917-aead-54a2f65a57a8
+2020-09-12T21:03:08.582340604Z  INFO  2020-09-12 21:03:08,581 [shard 0] database - Keyspace system: Reading CF paxos id=b7b7f0c2-fd0a-3410-8c05-3ef614bb7c2d version=6dd372de-72fb-3e1b-9b8c-f97738a67fe9
+2020-09-12T21:03:08.582349834Z  INFO  2020-09-12 21:03:08,581 [shard 0] database - Keyspace system: Reading CF schema_keyspaces id=b0f22357-4458-3cdb-9631-c43e59ce3676 version=84d28cef-59f9-34a9-9be5-31c684997f03
+2020-09-12T21:03:31.579155087Z  INFO  2020-09-12 21:03:31,578 [shard 0] init - starting gossip
+2020-09-12T21:03:31.579641181Z  WARN  2020-09-12 21:03:31,579 [shard 0] init - Using default cluster name is not recommended. Using a unique cluster name will reduce the chance of adding nodes to the wrong cluster by mistake
+2020-09-12T21:03:31.580241260Z  INFO  2020-09-12 21:03:31,579 [shard 0] init - starting storage proxy
+2020-09-12T21:03:31.589262931Z  INFO  2020-09-12 21:03:31,588 [shard 0] init - creating hints manager
+2020-09-12T21:03:31.590073221Z  INFO  2020-09-12 21:03:31,589 [shard 1] init - creating hints manager
+2020-09-12T21:03:31.590730306Z  INFO  2020-09-12 21:03:31,590 [shard 0] init - starting migration manager
+2020-09-12T21:03:31.591275798Z  INFO  2020-09-12 21:03:31,591 [shard 0] init - starting query processor
+2020-09-12T21:03:31.592663365Z  INFO  2020-09-12 21:03:31,592 [shard 0] init - initializing batchlog manager
+2020-09-12T21:03:31.596313310Z  INFO  2020-09-12 21:03:31,596 [shard 0] legacy_schema_migrator - Moving 0 keyspaces from legacy schema tables to the new schema keyspace (system_schema)
+2020-09-12T21:03:31.597080972Z  INFO  2020-09-12 21:03:31,596 [shard 0] legacy_schema_migrator - Dropping legacy schema tables
+2020-09-12T21:03:55.106110195Z  INFO  2020-09-12 21:03:55,105 [shard 0] legacy_schema_migrator - Completed migration of legacy schema tables
+2020-09-12T21:03:55.109146584Z  INFO  2020-09-12 21:03:55,108 [shard 0] init - loading system sstables
+2020-09-12T21:04:19.833865081Z  INFO  2020-09-12 21:04:19,833 [shard 0] init - loading non-system sstables
+2020-09-12T21:04:32.228094193Z  INFO  2020-09-12 21:04:32,227 [shard 0] database - Populating Keyspace dt
+2020-09-12T21:04:32.228925349Z  INFO  2020-09-12 21:04:32,228 [shard 0] database - Keyspace dt: Reading CF element_twin_idx_index id=630ae8b0-d77b-11ea-9877-000000000001 version=bc3026fd-bc4e-318d-b6f4-ca0b566cb74b
+2020-09-12T21:04:32.228971803Z  INFO  2020-09-12 21:04:32,228 [shard 0] database - Keyspace dt: Reading CF source_element_idx_index id=68593f10-d77b-11ea-9877-000000000001 version=33e3f927-f730-3081-88e1-6bed2962e42a
+2020-09-12T21:04:32.229033329Z  INFO  2020-09-12 21:04:32,228 [shard 0] database - Keyspace dt: Reading CF source id=65ff2270-d77b-11ea-9877-000000000001 version=5f8471b7-7d19-31d4-9be5-0f153affb0bb
+2020-09-12T21:04:32.229054751Z  INFO  2020-09-12 21:04:32,228 [shard 0] database - Keyspace dt: Reading CF source_data id=6af6cd50-d77b-11ea-9877-000000000001 version=b52400e3-b307-3141-b3fc-e5d63573f135
+2020-09-12T21:04:32.229073116Z  INFO  2020-09-12 21:04:32,228 [shard 0] database - Keyspace dt: Reading CF element id=607549b0-d77b-11ea-9877-000000000001 version=f44a6c4b-69d8-37f2-b116-7260740acc6c
+2020-09-12T21:04:32.229143008Z  INFO  2020-09-12 21:04:32,228 [shard 0] database - Keyspace dt: Reading CF twin id=5e00c740-d77b-11ea-9877-000000000001 version=6240633e-c8cc-3fea-a1e3-452eff1b9659
+2020-09-12T21:04:32.229163696Z  INFO  2020-09-12 21:04:32,228 [shard 0] database - Keyspace dt: Reading CF user id=5c294820-d77b-11ea-9877-000000000001 version=02cce273-02f1-3e6a-8674-f1016e3f22d7
+2020-09-12T21:04:32.230770373Z  INFO  2020-09-12 21:04:32,228 [shard 0] database - Populating Keyspace system_distributed
+2020-09-12T21:04:32.230818617Z  INFO  2020-09-12 21:04:32,228 [shard 0] database - Keyspace system_distributed: Reading CF view_build_status id=5582b59f-8e4e-35e1-b913-3acada51eb04 version=e0b6e628-60e0-39a2-ada0-9b6c13bdd9bc
+2020-09-12T21:04:32.230838927Z  INFO  2020-09-12 21:04:32,228 [shard 0] database - Keyspace system_distributed: Reading CF cdc_generations id=6a4df139-00b6-3d21-9efc-dade266dc3b7 version=2511b46b-df1d-39fa-9a77-f5cacf88af47
+2020-09-12T21:04:32.230857082Z  INFO  2020-09-12 21:04:32,228 [shard 0] database - Keyspace system_distributed: Reading CF cdc_streams id=07405732-4620-34d6-a85e-947248dad9a4 version=b606cfa4-a37b-32bd-a624-e05cab2bed3c
+2020-09-12T21:04:32.230906132Z  INFO  2020-09-12 21:04:32,228 [shard 0] database - Populating Keyspace system_auth
+2020-09-12T21:04:32.230924793Z  INFO  2020-09-12 21:04:32,228 [shard 0] database - Keyspace system_auth: Reading CF roles id=5bc52802-de25-35ed-aeab-188eecebb090 version=d8f599da-7544-3f57-aa58-b229deea93e0
+2020-09-12T21:04:32.230941914Z  INFO  2020-09-12 21:04:32,228 [shard 0] database - Keyspace system_auth: Reading CF role_members id=0ecdaa87-f8fb-3e60-88d1-74fb36fe5c0d version=2923b5bb-f2f8-36e8-9e73-19019900010c
+2020-09-12T21:04:32.230959907Z  INFO  2020-09-12 21:04:32,228 [shard 0] database - Populating Keyspace system_traces
+2020-09-12T21:04:32.230975979Z  INFO  2020-09-12 21:04:32,228 [shard 0] database - Keyspace system_traces: Reading CF sessions id=c5e99f16-8677-3914-b17e-960613512345 version=e0fc4b06-6cba-3b7b-bfb6-b42a77c370a9
+2020-09-12T21:04:32.230992987Z  INFO  2020-09-12 21:04:32,228 [shard 0] database - Keyspace system_traces: Reading CF node_slow_log_time_idx id=f9706768-aa1e-3d87-9e5c-51a3927c2870 version=eaffc0bb-7b2c-3b64-8924-d8ba685120bc
+2020-09-12T21:04:32.231064235Z  INFO  2020-09-12 21:04:32,228 [shard 0] database - Keyspace system_traces: Reading CF sessions_time_idx id=0ebf001c-c1d1-3693-9a63-c3d96ac53318 version=cd5d1e5f-1f42-3b9d-a8ba-3af39d59a7d5
+2020-09-12T21:04:32.231082246Z  INFO  2020-09-12 21:04:32,229 [shard 0] database - Keyspace system_traces: Reading CF events id=8826e8e9-e16a-3728-8753-3bc1fc713c25 version=41a6b26e-a03b-3ae1-8a4a-b9446e7f9304
+2020-09-12T21:04:32.231101844Z  INFO  2020-09-12 21:04:32,229 [shard 0] database - Keyspace system_traces: Reading CF node_slow_log id=bfcc4e62-5b63-3aa1-a1c3-6f5e47f3325c version=23e7a411-8414-340f-854d-20a3a637e438
+2020-09-12T21:04:43.079867769Z  INFO  2020-09-12 21:04:43,079 [shard 0] init - starting view update generator
+2020-09-12T21:04:43.080831468Z  INFO  2020-09-12 21:04:43,080 [shard 0] init - discovering staging sstables
+2020-09-12T21:04:43.081531154Z  INFO  2020-09-12 21:04:43,081 [shard 0] init - setting up system keyspace
+2020-09-12T21:04:43.138662641Z  INFO  2020-09-12 21:04:43,137 [shard 0] init - starting commit log
+2020-09-12T21:04:43.139394745Z  INFO  2020-09-12 21:04:43,138 [shard 0] init - replaying commit log
+2020-09-12T21:04:43.142993413Z  INFO  2020-09-12 21:04:43,142 [shard 0] commitlog_replayer - Replaying /var/lib/scylla/commitlog/CommitLog-1-19218030.log, /var/lib/scylla/commitlog/CommitLog-1-18014398528700014.log, /var/lib/scylla/commitlog/CommitLog-1-18014398528700013.log, /var/lib/scylla/commitlog/CommitLog-1-19218029.log, /var/lib/scylla/commitlog/CommitLog-1-19218028.log, /var/lib/scylla/commitlog/CommitLog-1-18014398528700015.log
+2020-09-12T21:04:52.881322400Z  INFO  2020-09-12 21:04:52,880 [shard 0] commitlog_replayer - Log replay complete, 20296 replayed mutations (0 invalid, 1000 skipped)
+2020-09-12T21:04:52.882263766Z  INFO  2020-09-12 21:04:52,881 [shard 0] init - replaying commit log - flushing memtables
+2020-09-12T21:05:17.295438029Z  INFO  2020-09-12 21:05:17,294 [shard 0] init - replaying commit log - removing old commitlog segments
+2020-09-12T21:05:17.296761798Z  INFO  2020-09-12 21:05:17,296 [shard 0] compaction - Compacting [/var/lib/scylla/data/system/peers-37f71aca7dc2383ba70672528af04d4f/mc-36-big-Data.db:level=0, /var/lib/scylla/data/system/peers-37f71aca7dc2383ba70672528af04d4f/mc-34-big-Data.db:level=0, /var/lib/scylla/data/system/peers-37f71aca7dc2383ba70672528af04d4f/mc-32-big-Data.db:level=0, ]
+2020-09-12T21:05:17.297580349Z  INFO  2020-09-12 21:05:17,297 [shard 1] compaction - Compacting [/var/lib/scylla/data/system_schema/dropped_columns-5e7583b5f3f43af19a39b7e1d6f5f11f/mc-155-big-Data.db:level=0, /var/lib/scylla/data/system_schema/dropped_columns-5e7583b5f3f43af19a39b7e1d6f5f11f/mc-153-big-Data.db:level=0, /var/lib/scylla/data/system_schema/dropped_columns-5e7583b5f3f43af19a39b7e1d6f5f11f/mc-157-big-Data.db:level=0, ]
+2020-09-12T21:05:17.297616254Z  INFO  2020-09-12 21:05:17,297 [shard 1] compaction - Compacting [/var/lib/scylla/data/system_schema/functions-96489b7980be3e14a70166a0b9159450/mc-85-big-Data.db:level=0, /var/lib/scylla/data/system_schema/functions-96489b7980be3e14a70166a0b9159450/mc-83-big-Data.db:level=0, ]
+2020-09-12T21:05:17.298444861Z  INFO  2020-09-12 21:05:17,297 [shard 1] compaction - Compacting [/var/lib/scylla/data/system/compaction_history-b4dbb7b4dc493fb5b3bfce6e434832ca/mc-121-big-Data.db:level=0, /var/lib/scylla/data/system/compaction_history-b4dbb7b4dc493fb5b3bfce6e434832ca/mc-119-big-Data.db:level=0, /var/lib/scylla/data/system/compaction_history-b4dbb7b4dc493fb5b3bfce6e434832ca/mc-117-big-Data.db:level=0, ]
+2020-09-12T21:05:17.298466291Z  INFO  2020-09-12 21:05:17,297 [shard 1] compaction - Compacting [/var/lib/scylla/data/system_schema/columns-24101c25a2ae3af787c1b40ee1aca33f/mc-159-big-Data.db:level=0, /var/lib/scylla/data/system_schema/columns-24101c25a2ae3af787c1b40ee1aca33f/mc-161-big-Data.db:level=0, /var/lib/scylla/data/system_schema/columns-24101c25a2ae3af787c1b40ee1aca33f/mc-157-big-Data.db:level=0, ]
+2020-09-12T21:05:17.298478684Z  INFO  2020-09-12 21:05:17,296 [shard 0] compaction - Compacting [/var/lib/scylla/data/system/compaction_history-b4dbb7b4dc493fb5b3bfce6e434832ca/mc-120-big-Data.db:level=0, /var/lib/scylla/data/system/compaction_history-b4dbb7b4dc493fb5b3bfce6e434832ca/mc-118-big-Data.db:level=0, /var/lib/scylla/data/system/compaction_history-b4dbb7b4dc493fb5b3bfce6e434832ca/mc-116-big-Data.db:level=0, ]
+2020-09-12T21:05:17.299367891Z  INFO  2020-09-12 21:05:17,298 [shard 0] compaction - Compacting [/var/lib/scylla/data/system/local-7ad54392bcdd35a684174e047860b377/mc-478-big-Data.db:level=0, /var/lib/scylla/data/system/local-7ad54392bcdd35a684174e047860b377/mc-474-big-Data.db:level=0, /var/lib/scylla/data/system/local-7ad54392bcdd35a684174e047860b377/mc-476-big-Data.db:level=0, /var/lib/scylla/data/system/local-7ad54392bcdd35a684174e047860b377/mc-480-big-Data.db:level=0, /var/lib/scylla/data/system/local-7ad54392bcdd35a684174e047860b377/mc-472-big-Data.db:level=0, ]
+2020-09-12T21:05:17.299405315Z  INFO  2020-09-12 21:05:17,298 [shard 0] compaction - Compacting [/var/lib/scylla/data/system/truncated-38c19fd0fb863310a4b70d0cc66628aa/mc-214-big-Data.db:level=0, /var/lib/scylla/data/system/truncated-38c19fd0fb863310a4b70d0cc66628aa/mc-216-big-Data.db:level=0, /var/lib/scylla/data/system/truncated-38c19fd0fb863310a4b70d0cc66628aa/mc-212-big-Data.db:level=0, ]
+2020-09-12T21:05:17.299428758Z  INFO  2020-09-12 21:05:17,298 [shard 0] compaction - Compacting [/var/lib/scylla/data/system/clients-ca0f635d863036098d93a1fc06f2a5e5/mc-54-big-Data.db:level=0, /var/lib/scylla/data/system/clients-ca0f635d863036098d93a1fc06f2a5e5/mc-72-big-Data.db:level=0, /var/lib/scylla/data/system/clients-ca0f635d863036098d93a1fc06f2a5e5/mc-70-big-Data.db:level=0, /var/lib/scylla/data/system/clients-ca0f635d863036098d93a1fc06f2a5e5/mc-68-big-Data.db:level=0, /var/lib/scylla/data/system/clients-ca0f635d863036098d93a1fc06f2a5e5/mc-76-big-Data.db:level=0, /var/lib/scylla/data/system/clients-ca0f635d863036098d93a1fc06f2a5e5/mc-66-big-Data.db:level=0, /var/lib/scylla/data/system/clients-ca0f635d863036098d93a1fc06f2a5e5/mc-64-big-Data.db:level=0, /var/lib/scylla/data/system/clients-ca0f635d863036098d93a1fc06f2a5e5/mc-62-big-Data.db:level=0, /var/lib/scylla/data/system/clients-ca0f635d863036098d93a1fc06f2a5e5/mc-56-big-Data.db:level=0, /var/lib/scylla/data/system/clients-ca0f635d863036098d93a1fc06f2a5e5/mc-60-big-Data.db:level=0, /var/lib/scylla/data/system/clients-ca0f635d863036098d93a1fc06f2a5e5/mc-58-big-Data.db:level=0, /var/lib/scylla/data/system/clients-ca0f635d863036098d93a1fc06f2a5e5/mc-74-big-Data.db:level=0, ]
+2020-09-12T21:05:17.300301830Z  INFO  2020-09-12 21:05:17,299 [shard 1] compaction - Compacting [/var/lib/scylla/data/system_schema/tables-afddfb9dbc1e30688056eed6c302ba09/mc-153-big-Data.db:level=0, /var/lib/scylla/data/system_schema/tables-afddfb9dbc1e30688056eed6c302ba09/mc-151-big-Data.db:level=0, ]
+2020-09-12T21:05:17.300333750Z  INFO  2020-09-12 21:05:17,299 [shard 1] compaction - Compacting [/var/lib/scylla/data/dt/source_data-6af6cd50d77b11ea9877000000000001/mc-81-big-Data.db:level=0, /var/lib/scylla/data/dt/source_data-6af6cd50d77b11ea9877000000000001/mc-79-big-Data.db:level=0, ]
+2020-09-12T21:05:17.306830225Z  INFO  2020-09-12 21:05:17,306 [shard 0] init - initializing migration manager RPC verbs
+2020-09-12T21:05:17.308277836Z  INFO  2020-09-12 21:05:17,308 [shard 0] init - initializing storage proxy RPC verbs
+2020-09-12T21:05:17.309792389Z  INFO  2020-09-12 21:05:17,309 [shard 0] init - starting streaming service
+2020-09-12T21:05:17.313274178Z  INFO  2020-09-12 21:05:17,313 [shard 0] init - starting hinted handoff manager
+2020-09-12T21:05:23.447541826Z  INFO  2020-09-12 21:05:23,447 [shard 1] compaction - Compacting [/var/lib/scylla/data/system_schema/view_virtual_columns-08843b6345dc3be29798a0418295cfaa/mc-95-big-Data.db:level=0, /var/lib/scylla/data/system_schema/view_virtual_columns-08843b6345dc3be29798a0418295cfaa/mc-93-big-Data.db:level=0, /var/lib/scylla/data/system_schema/view_virtual_columns-08843b6345dc3be29798a0418295cfaa/mc-89-big-Data.db:level=0, ]
+2020-09-12T21:05:23.448135833Z  INFO  2020-09-12 21:05:23,447 [shard 1] compaction - Compacting [/var/lib/scylla/data/system_schema/triggers-4df70b666b05325195a132b54005fd48/mc-85-big-Data.db:level=0, /var/lib/scylla/data/system_schema/triggers-4df70b666b05325195a132b54005fd48/mc-83-big-Data.db:level=0, ]
+2020-09-12T21:05:23.449424492Z  INFO  2020-09-12 21:05:23,449 [shard 1] compaction - Compacting [/var/lib/scylla/data/system_schema/keyspaces-abac5682dea631c5b535b3d6cffd0fb6/mc-171-big-Data.db:level=0, /var/lib/scylla/data/system_schema/keyspaces-abac5682dea631c5b535b3d6cffd0fb6/mc-173-big-Data.db:level=0, /var/lib/scylla/data/system_schema/keyspaces-abac5682dea631c5b535b3d6cffd0fb6/mc-169-big-Data.db:level=0, ]
+2020-09-12T21:05:23.628517759Z  INFO  2020-09-12 21:05:23,627 [shard 0] compaction - Compacted 3 sstables to []. 16429 bytes to 0 (~0% of original) in 0ms = 0.00MB/s. ~384 total partitions merged to 0.
+2020-09-12T21:05:23.630978032Z  INFO  2020-09-12 21:05:23,630 [shard 0] compaction - Compacted 12 sstables to []. 255756 bytes to 0 (~0% of original) in 30ms = 0.00MB/s. ~1536 total partitions merged to 0.
+2020-09-12T21:05:23.633748784Z  INFO  2020-09-12 21:05:23,633 [shard 0] init - starting messaging service
+2020-09-12T21:05:23.635127242Z  INFO  2020-09-12 21:05:23,634 [shard 0] repair - Setting max_repair_memory=126248550, max_repair_memory_per_range=33554432, max_repair_ranges_in_parallel=3
+2020-09-12T21:05:23.635824726Z  INFO  2020-09-12 21:05:23,635 [shard 0] init - starting storage service
+2020-09-12T21:05:23.637077095Z  INFO  2020-09-12 21:05:23,636 [shard 0] storage_service - Loading persisted ring state
+2020-09-12T21:05:23.639208237Z  INFO  2020-09-12 21:05:23,638 [shard 0] storage_service - loaded_peer_features: peer_features size=0
+2020-09-12T21:05:23.639242901Z  INFO  2020-09-12 21:05:23,638 [shard 0] storage_service - Checking remote features skipped, since this node is a new seed node which knows nothing about the cluster
+2020-09-12T21:05:23.640888553Z  INFO  2020-09-12 21:05:23,640 [shard 0] storage_service - Restarting a node in NORMAL status
+2020-09-12T21:05:23.729912325Z  INFO  2020-09-12 21:05:23,729 [shard 0] database - Schema version changed to 3f00f995-6495-3765-8599-4e76a2f4c6b2
+2020-09-12T21:05:23.730763388Z  INFO  2020-09-12 21:05:23,730 [shard 0] storage_service - Starting up server gossip
+2020-09-12T21:05:27.037505479Z  INFO  2020-09-12 21:05:27,036 [shard 1] compaction - Compacted 2 sstables to [/var/lib/scylla/data/dt/source_data-6af6cd50d77b11ea9877000000000001/mc-83-big-Data.db:level=0, ]. 1491789 bytes to 1486654 (~99% of original) in 6147ms = 0.23MB/s. ~256 total partitions merged to 1.
+2020-09-12T21:05:27.327189214Z  INFO  2020-09-12 21:05:27,323 [shard 0] messaging_service - Starting Messaging Service on port 7000
+2020-09-12T21:05:27.443699724Z  INFO  2020-09-12 21:05:27,442 [shard 1] compaction - Compacted 3 sstables to [/var/lib/scylla/data/system_schema/dropped_columns-5e7583b5f3f43af19a39b7e1d6f5f11f/mc-159-big-Data.db:level=0, ]. 83918 bytes to 39629 (~47% of original) in 6149ms = 0.01MB/s. ~384 total partitions merged to 2.
+2020-09-12T21:05:27.443755355Z  INFO  2020-09-12 21:05:27,442 [shard 1] compaction - Compacted 2 sstables to [/var/lib/scylla/data/system_schema/tables-afddfb9dbc1e30688056eed6c302ba09/mc-155-big-Data.db:level=0, ]. 112671 bytes to 68672 (~60% of original) in 6147ms = 0.01MB/s. ~256 total partitions merged to 6.
+2020-09-12T21:05:27.443777332Z  INFO  2020-09-12 21:05:27,442 [shard 1] compaction - Compacted 3 sstables to [/var/lib/scylla/data/system_schema/columns-24101c25a2ae3af787c1b40ee1aca33f/mc-163-big-Data.db:level=0, ]. 165258 bytes to 72891 (~44% of original) in 6149ms = 0.01MB/s. ~384 total partitions merged to 6.
+2020-09-12T21:05:27.443796822Z  INFO  2020-09-12 21:05:27,442 [shard 1] compaction - Compacted 3 sstables to [/var/lib/scylla/data/system/compaction_history-b4dbb7b4dc493fb5b3bfce6e434832ca/mc-123-big-Data.db:level=0, ]. 216499 bytes to 64912 (~29% of original) in 6151ms = 0.01MB/s. ~384 total partitions merged to 7.
+2020-09-12T21:05:27.443816165Z  INFO  2020-09-12 21:05:27,442 [shard 1] compaction - Compacted 2 sstables to [/var/lib/scylla/data/system_schema/functions-96489b7980be3e14a70166a0b9159450/mc-87-big-Data.db:level=0, ]. 78631 bytes to 39627 (~50% of original) in 6149ms = 0.01MB/s. ~256 total partitions merged to 2.
+2020-09-12T21:05:27.803580785Z  INFO  2020-09-12 21:05:27,803 [shard 0] compaction - Compacted 3 sstables to [/var/lib/scylla/data/system/truncated-38c19fd0fb863310a4b70d0cc66628aa/mc-218-big-Data.db:level=0, ]. 158516 bytes to 77001 (~48% of original) in 9652ms = 0.01MB/s. ~384 total partitions merged to 3.
+2020-09-12T21:05:27.832268877Z  INFO  2020-09-12 21:05:27,831 [shard 0] compaction - Compacted 5 sstables to [/var/lib/scylla/data/system/local-7ad54392bcdd35a684174e047860b377/mc-482-big-Data.db:level=0, ]. 37283 bytes to 12765 (~34% of original) in 9686ms = 0.00MB/s. ~640 total partitions merged to 1.
+2020-09-12T21:05:27.833792212Z  INFO  2020-09-12 21:05:27,833 [shard 0] compaction - Compacted 3 sstables to [/var/lib/scylla/data/system/compaction_history-b4dbb7b4dc493fb5b3bfce6e434832ca/mc-122-big-Data.db:level=0, ]. 256622 bytes to 84166 (~32% of original) in 9686ms = 0.01MB/s. ~384 total partitions merged to 10.
+2020-09-12T21:05:27.834940921Z  INFO  2020-09-12 21:05:27,834 [shard 0] compaction - Compacting [/var/lib/scylla/data/system/local-7ad54392bcdd35a684174e047860b377/mc-484-big-Data.db:level=0, /var/lib/scylla/data/system/local-7ad54392bcdd35a684174e047860b377/mc-482-big-Data.db:level=0, ]
+2020-09-12T21:05:28.066921605Z  INFO  2020-09-12 21:05:28,062 [shard 1] compaction - Compacting [/var/lib/scylla/data/system/truncated-38c19fd0fb863310a4b70d0cc66628aa/mc-211-big-Data.db:level=0, /var/lib/scylla/data/system/truncated-38c19fd0fb863310a4b70d0cc66628aa/mc-213-big-Data.db:level=0, /var/lib/scylla/data/system/truncated-38c19fd0fb863310a4b70d0cc66628aa/mc-209-big-Data.db:level=0, ]
+2020-09-12T21:05:28.068785728Z  INFO  2020-09-12 21:05:28,067 [shard 1] compaction - Compacting [/var/lib/scylla/data/system_schema/computed_columns-cc7c7069374033c192a4c3de78dbd2c4/mc-143-big-Data.db:level=0, /var/lib/scylla/data/system_schema/computed_columns-cc7c7069374033c192a4c3de78dbd2c4/mc-141-big-Data.db:level=0, ]
+2020-09-12T21:05:28.069152235Z  INFO  2020-09-12 21:05:28,068 [shard 1] compaction - Compacting [/var/lib/scylla/data/system/large_cells-ead8bbc5f1463ae19f710b11f9a1d296/mc-5-big-Data.db:level=0, /var/lib/scylla/data/system/large_cells-ead8bbc5f1463ae19f710b11f9a1d296/mc-3-big-Data.db:level=0, ]
+2020-09-12T21:05:28.069173204Z  INFO  2020-09-12 21:05:28,068 [shard 1] compaction - Compacting [/var/lib/scylla/data/system_schema/indexes-0feb57ac311f382fba6d9024d305702f/mc-153-big-Data.db:level=0, /var/lib/scylla/data/system_schema/indexes-0feb57ac311f382fba6d9024d305702f/mc-151-big-Data.db:level=0, /var/lib/scylla/data/system_schema/indexes-0feb57ac311f382fba6d9024d305702f/mc-147-big-Data.db:level=0, ]
+2020-09-12T21:05:28.642533336Z  INFO  2020-09-12 21:05:28,641 [shard 0] compaction - Compacted 2 sstables to [/var/lib/scylla/data/system/local-7ad54392bcdd35a684174e047860b377/mc-486-big-Data.db:level=0, ]. 18856 bytes to 12286 (~65% of original) in 590ms = 0.02MB/s. ~256 total partitions merged to 1.
+2020-09-12T21:05:28.884916145Z  INFO  2020-09-12 21:05:28,884 [shard 1] compaction - Compacted 3 sstables to [/var/lib/scylla/data/system_schema/keyspaces-abac5682dea631c5b535b3d6cffd0fb6/mc-175-big-Data.db:level=0, ]. 139665 bytes to 61629 (~44% of original) in 4613ms = 0.01MB/s. ~384 total partitions merged to 6.
+2020-09-12T21:05:28.885052540Z  INFO  2020-09-12 21:05:28,884 [shard 1] compaction - Compacted 2 sstables to [/var/lib/scylla/data/system_schema/triggers-4df70b666b05325195a132b54005fd48/mc-87-big-Data.db:level=0, ]. 78099 bytes to 39361 (~50% of original) in 4620ms = 0.01MB/s. ~256 total partitions merged to 2.
+2020-09-12T21:05:28.885448289Z  INFO  2020-09-12 21:05:28,885 [shard 1] compaction - Compacted 2 sstables to []. 11364 bytes to 0 (~0% of original) in 0ms = 0.00MB/s. ~256 total partitions merged to 0.
+2020-09-12T21:05:28.886508690Z  INFO  2020-09-12 21:05:28,886 [shard 1] compaction - Compacted 3 sstables to [/var/lib/scylla/data/system_schema/view_virtual_columns-08843b6345dc3be29798a0418295cfaa/mc-97-big-Data.db:level=0, ]. 84094 bytes to 46764 (~55% of original) in 4620ms = 0.01MB/s. ~384 total partitions merged to 3.
+2020-09-12T21:05:29.273785650Z  INFO  2020-09-12 21:05:29,273 [shard 1] compaction - Compacting [/var/lib/scylla/data/system_schema/views-9786ac1cdd583201a7cdad556410c985/mc-85-big-Data.db:level=0, /var/lib/scylla/data/system_schema/views-9786ac1cdd583201a7cdad556410c985/mc-83-big-Data.db:level=0, ]
+2020-09-12T21:05:29.274845977Z  INFO  2020-09-12 21:05:29,274 [shard 1] compaction - Compacting [/var/lib/scylla/data/system_schema/scylla_tables-5d912ff1f7593665b2c88042ab5103dd/mc-149-big-Data.db:level=0, /var/lib/scylla/data/system_schema/scylla_tables-5d912ff1f7593665b2c88042ab5103dd/mc-151-big-Data.db:level=0, ]
+2020-09-12T21:05:29.749733577Z  INFO  2020-09-12 21:05:29,748 [shard 1] compaction - Compacted 3 sstables to [/var/lib/scylla/data/system_schema/indexes-0feb57ac311f382fba6d9024d305702f/mc-155-big-Data.db:level=0, ]. 83879 bytes to 46627 (~55% of original) in 1205ms = 0.04MB/s. ~384 total partitions merged to 3.
+2020-09-12T21:05:29.801063288Z  INFO  2020-09-12 21:05:29,800 [shard 1] compaction - Compacted 2 sstables to [/var/lib/scylla/data/system_schema/computed_columns-cc7c7069374033c192a4c3de78dbd2c4/mc-145-big-Data.db:level=0, ]. 44443 bytes to 46296 (~104% of original) in 1207ms = 0.04MB/s. ~256 total partitions merged to 3.
+2020-09-12T21:05:29.834890655Z  INFO  2020-09-12 21:05:29,834 [shard 1] compaction - Compacted 3 sstables to [/var/lib/scylla/data/system/truncated-38c19fd0fb863310a4b70d0cc66628aa/mc-215-big-Data.db:level=0, ]. 221751 bytes to 74278 (~33% of original) in 1211ms = 0.06MB/s. ~384 total partitions merged to 6.
+2020-09-12T21:05:30.439676231Z  INFO  2020-09-12 21:05:30,438 [shard 1] compaction - Compacted 2 sstables to [/var/lib/scylla/data/system_schema/views-9786ac1cdd583201a7cdad556410c985/mc-87-big-Data.db:level=0, ]. 47947 bytes to 48225 (~100% of original) in 948ms = 0.05MB/s. ~256 total partitions merged to 3.
+2020-09-12T21:05:30.440886930Z  INFO  2020-09-12 21:05:30,440 [shard 1] compaction - Compacted 2 sstables to [/var/lib/scylla/data/system_schema/scylla_tables-5d912ff1f7593665b2c88042ab5103dd/mc-153-big-Data.db:level=0, ]. 80973 bytes to 40716 (~50% of original) in 948ms = 0.04MB/s. ~256 total partitions merged to 2.
+2020-09-12T21:05:39.328433779Z  INFO  2020-09-12 21:05:39,327 [shard 0] gossip - No gossip backlog; proceeding
+2020-09-12T21:05:39.329376599Z  INFO  2020-09-12 21:05:39,328 [shard 0] features - Feature COMPUTED_COLUMNS is enabled
+2020-09-12T21:05:39.329423919Z  INFO  2020-09-12 21:05:39,328 [shard 0] features - Feature CORRECT_COUNTER_ORDER is enabled
+2020-09-12T21:05:39.329445313Z  INFO  2020-09-12 21:05:39,328 [shard 0] features - Feature CORRECT_NON_COMPOUND_RANGE_TOMBSTONES is enabled
+2020-09-12T21:05:39.329464509Z  INFO  2020-09-12 21:05:39,328 [shard 0] features - Feature CORRECT_STATIC_COMPACT_IN_MC is enabled
+2020-09-12T21:05:39.329483063Z  INFO  2020-09-12 21:05:39,328 [shard 0] features - Feature COUNTERS is enabled
+2020-09-12T21:05:39.329501523Z  INFO  2020-09-12 21:05:39,328 [shard 0] features - Feature DIGEST_INSENSITIVE_TO_EXPIRY is enabled
+2020-09-12T21:05:39.329519911Z  INFO  2020-09-12 21:05:39,328 [shard 0] features - Feature DIGEST_MULTIPARTITION_READ is enabled
+2020-09-12T21:05:39.329538138Z  INFO  2020-09-12 21:05:39,328 [shard 0] features - Feature HINTED_HANDOFF_SEPARATE_CONNECTION is enabled
+2020-09-12T21:05:39.329556468Z  INFO  2020-09-12 21:05:39,328 [shard 0] features - Feature INDEXES is enabled
+2020-09-12T21:05:39.329574898Z  INFO  2020-09-12 21:05:39,328 [shard 0] features - Feature LARGE_PARTITIONS is enabled
+2020-09-12T21:05:39.329615924Z  INFO  2020-09-12 21:05:39,328 [shard 0] features - Feature LWT is enabled
+2020-09-12T21:05:39.329635304Z  INFO  2020-09-12 21:05:39,328 [shard 0] features - Feature MATERIALIZED_VIEWS is enabled
+2020-09-12T21:05:39.329652151Z  INFO  2020-09-12 21:05:39,328 [shard 0] features - Feature MC_SSTABLE_FORMAT is enabled
+2020-09-12T21:05:39.329669695Z  INFO  2020-09-12 21:05:39,328 [shard 0] features - Feature NONFROZEN_UDTS is enabled
+2020-09-12T21:05:39.329686719Z  INFO  2020-09-12 21:05:39,328 [shard 0] features - Feature PER_TABLE_PARTITIONERS is enabled
+2020-09-12T21:05:39.329703795Z  INFO  2020-09-12 21:05:39,328 [shard 0] features - Feature RANGE_TOMBSTONES is enabled
+2020-09-12T21:05:39.329720736Z  INFO  2020-09-12 21:05:39,328 [shard 0] features - Feature ROLES is enabled
+2020-09-12T21:05:39.329768409Z  INFO  2020-09-12 21:05:39,328 [shard 0] features - Feature ROW_LEVEL_REPAIR is enabled
+2020-09-12T21:05:39.329788079Z  INFO  2020-09-12 21:05:39,328 [shard 0] features - Feature SCHEMA_TABLES_V3 is enabled
+2020-09-12T21:05:39.329805604Z  INFO  2020-09-12 21:05:39,328 [shard 0] features - Feature STREAM_WITH_RPC_STREAM is enabled
+2020-09-12T21:05:39.329822711Z  INFO  2020-09-12 21:05:39,328 [shard 0] features - Feature TRUNCATION_TABLE is enabled
+2020-09-12T21:05:39.329840084Z  INFO  2020-09-12 21:05:39,328 [shard 0] system_keyspace - Got cluster agreement on truncation table feature. Removing legacy records.
+2020-09-12T21:05:39.330571222Z  INFO  2020-09-12 21:05:39,329 [shard 0] features - Feature UNBOUNDED_RANGE_TOMBSTONES is enabled
+2020-09-12T21:05:39.330609005Z  INFO  2020-09-12 21:05:39,329 [shard 0] features - Feature VIEW_VIRTUAL_COLUMNS is enabled
+2020-09-12T21:05:39.330628622Z  INFO  2020-09-12 21:05:39,329 [shard 0] features - Feature WRITE_FAILURE_REPLY is enabled
+2020-09-12T21:05:39.330646699Z  INFO  2020-09-12 21:05:39,329 [shard 0] features - Feature XXHASH is enabled
+2020-09-12T21:05:39.331675219Z  INFO  2020-09-12 21:05:39,330 [shard 0] system_keyspace - Legacy records deleted.
+2020-09-12T21:05:39.332755361Z  INFO  2020-09-12 21:05:39,331 [shard 0] init - starting system distributed keyspace
+2020-09-12T21:05:39.338020307Z  INFO  2020-09-12 21:05:39,336 [shard 0] storage_service - Using saved tokens {943448605036726745, 9061580907506437136, 8957018461898327244, 8813999419995718088, 8775859223532977932, 873311388414975666, 8707696313600310498, 8675978575875245837, 855031166620283245, 8476533345381470087, 8413544620893079714, 8382283044476755854, 7804258889026263620, 778239093056833917, 7732629563319678675, 7564694057214588647, 747840302865059114, 7255484784972643852, 700944770677405149, 7009081579420542256, 7354219953741161264, 6974970471767945112, 6788034976878782500, 667581605220131528, 6496091893897576732, 6478032244021912394, 6420907855788431922, 8777890816944145805, 6381418245203458391, 6358173612251239308, 6302443190184390149, 6115776390551923703, 5906838239532612246, 5890706123786165213, 588034934972968299, 5848278814186320030, 5834675951458569055, 5796254206948921528, -6441145814158460549, 7172238068082229918, -6238625478980828395, -6199824488038647909, -572473923349256348, -5526097868254533829, -5508289632699420366, -6338043935148530859, 4738411181964629022, -5411685484465544274, 5103660925946342563, -5360532551957069796, -5246840897237646542, -8953406550820932827, -511676141100664160, -4872163430844150374, 5153854518462400651, -4829128129506020031, 6818717460470417221, -4735496583611878200, -7913213531410876291, -8612347190400988175, 3361838207769500988, -4770694758141334815, 3533570692245755170, -3014142033706378490, -6648258355715071793, 105268539462240253, 6448269612184381105, 3941245744356891698, -4925670906471950289, -6853270293933441203, -431455211546220291, -4106310081010891923, -4280461110562472301, -4231054370802445643, 4453520694484038438, -5140544052953576706, -7341700934491837716, -4177024142024341044, -2365586676906010085, -4368295386640868227, -6779834804380741154, 7103497347382660592, -471701403720839764, -2187125227394891465, -1593748153114868683, 8325613099551670589, -6017078328443447975, 408961909545308462, -3256341547923989103, 1911454556365012923, -2135119982021577211, -6104126434670973331, -1614584707908969492, -5285270377043925775, 194223785007163967, 3556932048290112968, 4378909036113166689, -2319706609635128471, 782580883702972777, -3880555618453256762, -2879534723161185431, 7469085752185829039, -8001902308657073600, -1522914538603683793, 784130423392421222, -3409621329811667263, -5136236598692180863, -2640475812391264528, 3907413558358164712, -2166731983266837511, -8529251962487546573, -5228242602708342126, -6263078841153087564, -1295419475388780424, 5311755414232655734, -4113405879925637368, 2104079815049743807, -105211415949921556, -1004253484774030395, -6093280019772326743, -1363472444035739717, 7772390126184307669, 3373616921334842984, -3428624778218969630, -4475005699924690030, -1207620414022812792, -4203952547861361192, -4895652206680369668, 5569071124009844993, -2800260328053956713, 1033733984444816800, -1761718599052329021, -6249520955674807415, -6810383749951706976, -2391018463907211455, -3729138346528579520, -3942245253345029362, -1032698423218536378, 2233495137371904435, -1970747149103226319, 2531294222158762011, 4445989245037378795, -2648919406212884980, 800062458669145892, -6586482614645135705, -8855822008500182327, -2076430708060394350, -6127879535600466936, 5017042126534426855, -6767019288334108993, -6985294397658573838, -2605645373691895986, 2542018259596577135, -2699231837109027988, -9132047842757487932, 9066588519930559993, -4601858807243735115, 1470306277250886071, 1688077838521597411, -2700796200994103492, -5656441245782528349, 3822141065635310082, -4415280594152455372, -1709100826419756065, -2732234699235264563, -3101294897153501639, 6933997554702494562, -4541237399207364623, 1251119865371637993, -3280527161887251879, -4007868363884276055, -4134923634748466107, -5595342098352848506, 533209426647054698, 285540986842976874, -4193553788022177878, -7111183380354176443, 7880345233810794046, -7190282066974323895, -7232953798633244985, -7512330892235471280, -889434854029329118, 9122882257136270100, 3909145942678699742, 2870638580126821409, -2685359252619347507, 4540975434217357056, 1912522665107890116, -1474028219808469861, -7767361191227918078, -8495384334141326469, -8024675672634848221, -8352632933072691056, -1084614158625469139, -8372022353883945178, -1171738939209168407, -8485257529464526975, -8549013321787275289, -7405825010257289618, -8694753427154041557, -9173155356561330710, -3164480873853500968, 1172299952227812636, 1535311813904826318, 156312151312654313, 2050968450175517454, 1018091569669202328, 1574734081023094222, 214428871588027420, -5095673126210616552, 2431756818088451524, -1208769590907790735, 3022913469242457337, 2609254198811139442, 5396954320704971060, 284028081363756156, -184157634332906914, 2879924223908633556, 3014475854062098037, 8280511155447462154, 3058186759042775792, 3100842289958262644, -769344519844763244, 3287699046743316011, 7743526815996532326, -7148146405116016542, 352278596429886466, 3606629961194077343, 3840184102447470012, -4623422606623793434, 3924960423780627192, 4660022660859336370, 5401470720317959250, 3979649323160207298, 4037379789709069307, 790424663468033093, 5150907166433009570, 4083460330442256183, 4262233236239091105, 4461207940793579131, 7222389702734437292, 4497639963855891379, 5935809959838255935, 525652295242460822, -9210810031089136649, 3145063885579200582, 5102381975608989830, 5104799485589097680, -467985751191813914, 5122450296475986719, 5256736089695841171, 5341717901052361821, 5441044328235651423, 5661405961885371428, -6303682351633097607, 5704999654143823990}
+2020-09-12T21:05:39.355584830Z  INFO  2020-09-12 21:05:39,355 [shard 0] database - Schema version changed to e1b2d478-e5f2-30c4-b994-d93919918df3
+2020-09-12T21:05:39.356067251Z  INFO  2020-09-12 21:05:39,355 [shard 0] database - Schema version changed to e1b2d478-e5f2-30c4-b994-d93919918df3
+2020-09-12T21:05:39.356609964Z  INFO  2020-09-12 21:05:39,356 [shard 0] database - Schema version changed to 0e03d198-385b-3f36-8c34-c3f5846bbbac
+2020-09-12T21:05:39.867303059Z  INFO  2020-09-12 21:05:39,866 [shard 0] compaction - Compacting [/var/lib/scylla/data/system/local-7ad54392bcdd35a684174e047860b377/mc-488-big-Data.db:level=0, /var/lib/scylla/data/system/local-7ad54392bcdd35a684174e047860b377/mc-486-big-Data.db:level=0, ]
+2020-09-12T21:05:39.872708758Z  INFO  2020-09-12 21:05:39,872 [shard 0] storage_service - Node 10.0.9.10 state jump to normal
+2020-09-12T21:05:39.872757289Z  INFO  2020-09-12 21:05:39,872 [shard 0] storage_service - Remove node 10.0.9.10 from pending replacing endpoint
+2020-09-12T21:05:40.299988442Z  INFO  2020-09-12 21:05:40,299 [shard 0] storage_service - NORMAL: node is now in normal status
+2020-09-12T21:05:40.300044880Z  INFO  2020-09-12 21:05:40,299 [shard 0] cdc - No generation seen during startup.
+2020-09-12T21:05:40.302044767Z  INFO  2020-09-12 21:05:40,301 [shard 0] init - starting tracing
+2020-09-12T21:05:40.302725334Z  INFO  2020-09-12 21:05:40,301 [shard 0] storage_service - SSTable data integrity checker is disabled.
+2020-09-12T21:05:40.302761388Z  INFO  2020-09-12 21:05:40,302 [shard 0] init - starting batchlog manager
+2020-09-12T21:05:40.303526462Z  INFO  2020-09-12 21:05:40,302 [shard 0] init - starting load meter
+2020-09-12T21:05:40.303562366Z  INFO  2020-09-12 21:05:40,302 [shard 0] init - starting cf cache hit rate calculator
+2020-09-12T21:05:40.303581360Z  INFO  2020-09-12 21:05:40,302 [shard 0] init - starting view update backlog broker
+2020-09-12T21:05:40.304181179Z  INFO  2020-09-12 21:05:40,303 [shard 0] init - Waiting for gossip to settle before accepting client requests...
+2020-09-12T21:05:40.436938772Z  INFO  2020-09-12 21:05:40,436 [shard 0] compaction - Compacted 2 sstables to [/var/lib/scylla/data/system/local-7ad54392bcdd35a684174e047860b377/mc-492-big-Data.db:level=0, ]. 18365 bytes to 12103 (~65% of original) in 410ms = 0.03MB/s. ~256 total partitions merged to 1.
+2020-09-12T21:05:40.437843565Z  INFO  2020-09-12 21:05:40,437 [shard 0] compaction - Compacting [/var/lib/scylla/data/system/local-7ad54392bcdd35a684174e047860b377/mc-490-big-Data.db:level=0, /var/lib/scylla/data/system/local-7ad54392bcdd35a684174e047860b377/mc-492-big-Data.db:level=0, ]
+2020-09-12T21:05:40.905739914Z  INFO  2020-09-12 21:05:40,905 [shard 0] compaction - Compacted 2 sstables to [/var/lib/scylla/data/system/local-7ad54392bcdd35a684174e047860b377/mc-494-big-Data.db:level=0, ]. 18201 bytes to 12075 (~66% of original) in 385ms = 0.03MB/s. ~256 total partitions merged to 1.
+2020-09-12T21:05:52.309550833Z  INFO  2020-09-12 21:05:52,304 [shard 0] gossip - No gossip backlog; proceeding
+2020-09-12T21:05:52.309603182Z  INFO  2020-09-12 21:05:52,304 [shard 0] init - allow replaying hints
+2020-09-12T21:05:52.309648279Z  INFO  2020-09-12 21:05:52,304 [shard 0] init - Launching generate_mv_updates for non system tables
+2020-09-12T21:05:52.309661089Z  INFO  2020-09-12 21:05:52,305 [shard 0] init - starting the view builder
+2020-09-12T21:05:52.704407075Z  INFO  2020-09-12 21:05:52,703 [shard 0] init - starting native transport
+2020-09-12T21:05:52.704461144Z  INFO  2020-09-12 21:05:52,703 [shard 0] compaction - Compacting [/var/lib/scylla/data/system/truncated-38c19fd0fb863310a4b70d0cc66628aa/mc-220-big-Data.db:level=0, /var/lib/scylla/data/system/truncated-38c19fd0fb863310a4b70d0cc66628aa/mc-218-big-Data.db:level=0, ]
+2020-09-12T21:05:52.705293702Z  INFO  2020-09-12 21:05:52,704 [shard 0] storage_service - Starting listening for CQL clients on 10.0.9.10:9042 (unencrypted)
+2020-09-12T21:05:52.706329653Z  INFO  2020-09-12 21:05:52,706 [shard 0] storage_service - Thrift server listening on 10.0.9.10:9160 ...
+2020-09-12T21:05:52.706933064Z  INFO  2020-09-12 21:05:52,706 [shard 0] init - serving
+2020-09-12T21:05:52.706964485Z  INFO  2020-09-12 21:05:52,706 [shard 0] init - Scylla version 4.1.6-0.20200831.6d9ff622df initialization completed.
+2020-09-12T21:05:53.347489941Z  INFO  2020-09-12 21:05:53,346 [shard 0] compaction - Compacted 2 sstables to [/var/lib/scylla/data/system/truncated-38c19fd0fb863310a4b70d0cc66628aa/mc-222-big-Data.db:level=0, ]. 82234 bytes to 76841 (~93% of original) in 491ms = 0.15MB/s. ~256 total partitions merged to 3.
+2020-09-12T21:07:28.900476446Z  INFO  2020-09-12 21:07:28,900 [shard 0] compaction - Compacting [/var/lib/scylla/data/system/clients-ca0f635d863036098d93a1fc06f2a5e5/mc-78-big-Data.db:level=0, /var/lib/scylla/data/system/clients-ca0f635d863036098d93a1fc06f2a5e5/mc-80-big-Data.db:level=0, ]
+2020-09-12T21:07:29.389861692Z  INFO  2020-09-12 21:07:29,389 [shard 0] compaction - Compacted 2 sstables to [/var/lib/scylla/data/system/clients-ca0f635d863036098d93a1fc06f2a5e5/mc-82-big-Data.db:level=0, ]. 101861 bytes to 6648 (~6% of original) in 347ms = 0.02MB/s. ~256 total partitions merged to 1.
+2020-09-12T21:07:47.822472466Z  INFO  2020-09-12 21:07:47,821 [shard 0] compaction - Compacting [/var/lib/scylla/data/system/clients-ca0f635d863036098d93a1fc06f2a5e5/mc-82-big-Data.db:level=0, /var/lib/scylla/data/system/clients-ca0f635d863036098d93a1fc06f2a5e5/mc-84-big-Data.db:level=0, ]
+2020-09-12T21:07:48.286576576Z  INFO  2020-09-12 21:07:48,285 [shard 0] compaction - Compacted 2 sstables to [/var/lib/scylla/data/system/clients-ca0f635d863036098d93a1fc06f2a5e5/mc-86-big-Data.db:level=0, ]. 57536 bytes to 6597 (~11% of original) in 366ms = 0.02MB/s. ~256 total partitions merged to 1.
