@@ -20,7 +20,7 @@ services:
       replicas: 1
       placement:    
         constraints:
-          - node.labels.name==cloud
+          - node.labels.name==client
     command: dt-client-bytes
   twin:
     image: "opendigitaltwin/dt-instance:latest"
@@ -40,7 +40,7 @@ services:
     deploy:
       placement:    
         constraints:
-          - node.labels.name==cloud
+          - node.labels.name==client
     command: dt-instance
   mqtt-broker:
     image: "eclipse-mosquitto:1.6.10"
@@ -54,7 +54,7 @@ services:
     deploy:
       placement:
         constraints:
-          - node.labels.name==cloud
+          - node.labels.name==client
   scylla-db:
     image: scylladb/scylla
     networks:
@@ -64,6 +64,6 @@ services:
     deploy:
       placement:
         constraints:
-         - node.labels.name==cloud
+         - node.labels.name==client
 networks:
   default:
