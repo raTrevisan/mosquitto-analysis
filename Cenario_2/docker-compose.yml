@@ -1,5 +1,6 @@
 version: '3'
 services:
+  
   client:
     image: "opendigitaltwin/dt-client-bytes:latest"
     depends_on:
@@ -24,6 +25,28 @@ services:
     command: dt-client-bytes
 
 
+  client_2:
+    image: "opendigitaltwin/dt-client-bytes:latest"
+    depends_on:
+      - mqtt-broker
+      - twin
+    environment:
+      - RUST_LOG=info
+      - MQTT_BROKER_ADDRESS=mqtt-broker
+      - MQTT_BROKER_PORT=1883
+      - MQTT_CLIENT_QOS=1
+      - MQTT_CLIENT_BUFFER_BYTE_SIZE=64
+      - MQTT_CLIENT_MESSAGES_TO_SEND=1000
+      - MQTT_CLIENT_MESSAGE_DELAY_MS=250
+      - MQTT_CLIENT_TOPIC=38162cb0-e585-43d7-b55d-5c240b2bfb7c/3142192f-6bae-4f12-a6f3-5464dc37e790/d0a71d84-b80f-4558-beac-8887750652e5
+    networks:
+      - default
+    deploy:
+      replicas: 1
+      placement:    
+        constraints:
+          - node.labels.name==cloud
+    command: dt-client-bytes
 
 
 
@@ -86,27 +109,4 @@ services:
 networks:
   default:
 
-
-  client_2:
-    image: "opendigitaltwin/dt-client-bytes:latest"
-    depends_on:
-      - mqtt-broker
-      - twin
-    environment:
-      - RUST_LOG=info
-      - MQTT_BROKER_ADDRESS=mqtt-broker
-      - MQTT_BROKER_PORT=1883
-      - MQTT_CLIENT_QOS=1
-      - MQTT_CLIENT_BUFFER_BYTE_SIZE=64
-      - MQTT_CLIENT_MESSAGES_TO_SEND=1000
-      - MQTT_CLIENT_MESSAGE_DELAY_MS=250
-      - MQTT_CLIENT_TOPIC=38162cb0-e585-43d7-b55d-5c240b2bfb7c/3142192f-6bae-4f12-a6f3-5464dc37e790/d0a71d84-b80f-4558-beac-8887750652e5
-    networks:
-      - default
-    deploy:
-      replicas: 1
-      placement:    
-        constraints:
-          - node.labels.name==cloud
-    command: dt-client-bytes
   
