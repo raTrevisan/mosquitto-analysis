@@ -32,7 +32,7 @@ services:
       - twin_2
     environment:
       - RUST_LOG=info
-      - MQTT_BROKER_ADDRESS=mqtt-broker
+      - MQTT_BROKER_ADDRESS=mqtt-broker_2
       - MQTT_BROKER_PORT=1883
       - MQTT_CLIENT_QOS=1
       - MQTT_CLIENT_BUFFER_BYTE_SIZE=64
@@ -112,17 +112,17 @@ services:
 
   mqtt-broker_2:
     image: "eclipse-mosquitto:1.6.10"
-            networks:
-              - default
-            volumes:
-              - ./mosquitto.conf:/mosquitto/config/mosquitto.conf
-              - /mosquitto/log:/mosquitto/log
-              - /mosquitto/data:/mosquitto/data
-            restart: always
-            deploy:
-              placement:
-                constraints:
-                  - node.labels.name==cloud
+    networks:
+      - default
+    volumes:
+      - ./mosquitto.conf:/mosquitto/config/mosquitto.conf
+      - /mosquitto/log:/mosquitto/log
+      - /mosquitto/data:/mosquitto/data
+    restart: always
+    deploy:
+      placement:
+        constraints:
+          - node.labels.name==cloud
         
 
 
