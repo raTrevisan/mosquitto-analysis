@@ -129,7 +129,7 @@ services:
       - mqtt-broker_2
       - scylla-db
     environment:
-      - MQTT_BROKER_ADDRESS=mqtt-broker
+      - MQTT_BROKER_ADDRESS=mqtt-broker_2
       - MQTT_BROKER_PORT=1883
       - MQTT_INSTANCE_QOS=1
       - RUST_LOG=info
@@ -151,7 +151,7 @@ services:
       - mqtt-broker_3
       - scylla-db
     environment:
-      - MQTT_BROKER_ADDRESS=mqtt-broker
+      - MQTT_BROKER_ADDRESS=mqtt-broker_3
       - MQTT_BROKER_PORT=1883
       - MQTT_INSTANCE_QOS=1
       - RUST_LOG=info
@@ -173,7 +173,7 @@ services:
       - mqtt-broker_4
       - scylla-db
     environment:
-      - MQTT_BROKER_ADDRESS=mqtt-broker
+      - MQTT_BROKER_ADDRESS=mqtt-broker_4
       - MQTT_BROKER_PORT=1883
       - MQTT_INSTANCE_QOS=1
       - RUST_LOG=info
@@ -259,6 +259,6 @@ services:
     deploy:
       placement:
         constraints:
-         - node.labels.name==client
+         - node.labels.name==fog1
 networks:
   default:

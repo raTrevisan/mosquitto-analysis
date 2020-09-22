@@ -82,7 +82,7 @@ services:
       - mqtt-broker_2
       - scylla-db
     environment:
-      - MQTT_BROKER_ADDRESS=mqtt-broker
+      - MQTT_BROKER_ADDRESS=mqtt-broker_2
       - MQTT_BROKER_PORT=1883
       - MQTT_INSTANCE_QOS=1
       - RUST_LOG=info
