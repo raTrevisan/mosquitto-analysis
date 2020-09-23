@@ -48,9 +48,9 @@ services:
     networks:
       - default
     volumes:
-      - ./mosquitto.conf:/mosquitto/config/mosquitto.conf
-      - /mosquitto/log:/mosquitto/log
+      - /mosquitto.conf:/mosquitto/config/mosquitto.conf	
       - /mosquitto/data:/mosquitto/data
+      - /mosquitto/log:/mosquitto/log
     restart: always
     deploy:
       placement:
