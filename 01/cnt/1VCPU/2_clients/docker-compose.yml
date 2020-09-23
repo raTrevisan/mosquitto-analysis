@@ -93,6 +93,10 @@ services:
     image: "eclipse-mosquitto:1.6.10"
     networks:
       - default
+    volumes:
+      - ./mosquitto.conf:/mosquitto/config/mosquitto.conf
+      - /mosquitto/log:/mosquitto/log
+      - /mosquitto/data:/mosquitto/data
     restart: always
     deploy:
       placement:
@@ -103,6 +107,10 @@ services:
     image: "eclipse-mosquitto:1.6.10"
     networks:
       - default
+    volumes:
+      - ./mosquitto.conf:/mosquitto/config/mosquitto.conf
+      - /mosquitto/log:/mosquitto/log
+      - /mosquitto/data:/mosquitto/data
     restart: always
     deploy:
       placement:
