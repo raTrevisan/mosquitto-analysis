@@ -101,13 +101,76 @@ services:
     command: dt-client-bytes
   
   
-    twin:
+  twin:
     image: "opendigitaltwin/dt-instance:latest"
     depends_on:
       - mqtt-broker
       - scylla-db
     environment:
       - MQTT_BROKER_ADDRESS=mqtt-broker
+      - MQTT_BROKER_PORT=1883
+      - MQTT_INSTANCE_QOS=1
+      - RUST_LOG=info
+      - DB_ADDRESS=scylla-db:9042
+      - TWIN_INSTANCE=38162cb0-e585-43d7-b55d-5c240b2bfb7c
+    networks:
+      - default
+    restart: always
+    deploy:
+      placement:    
+        constraints:
+          - node.labels.name==cloud
+    command: dt-instance
+
+  twin_2:
+    image: "opendigitaltwin/dt-instance:latest"
+    depends_on:
+      - mqtt-broker_2
+      - scylla-db
+    environment:
+      - MQTT_BROKER_ADDRESS=mqtt-broker_2
+      - MQTT_BROKER_PORT=1883
+      - MQTT_INSTANCE_QOS=1
+      - RUST_LOG=info
+      - DB_ADDRESS=scylla-db:9042
+      - TWIN_INSTANCE=38162cb0-e585-43d7-b55d-5c240b2bfb7c
+    networks:
+      - default
+    restart: always
+    deploy:
+      placement:    
+        constraints:
+          - node.labels.name==cloud
+    command: dt-instance
+
+  twin_3:
+    image: "opendigitaltwin/dt-instance:latest"
+    depends_on:
+      - mqtt-broker_3
+      - scylla-db
+    environment:
+      - MQTT_BROKER_ADDRESS=mqtt-broker_3
+      - MQTT_BROKER_PORT=1883
+      - MQTT_INSTANCE_QOS=1
+      - RUST_LOG=info
+      - DB_ADDRESS=scylla-db:9042
+      - TWIN_INSTANCE=38162cb0-e585-43d7-b55d-5c240b2bfb7c
+    networks:
+      - default
+    restart: always
+    deploy:
+      placement:    
+        constraints:
+          - node.labels.name==cloud
+    command: dt-instance
+
+  twin_4:
+    image: "opendigitaltwin/dt-instance:latest"
+    depends_on:
+      - mqtt-broker_4
+      - scylla-db
+    environment:
+      - MQTT_BROKER_ADDRESS=mqtt-broker_4
       - MQTT_BROKER_PORT=1883
       - MQTT_INSTANCE_QOS=1
       - RUST_LOG=info
@@ -143,7 +206,6 @@ services:
         constraints:
           - node.labels.name==fog2
 
-
   mqtt-broker_3:
     image: "eclipse-mosquitto:1.6.10"
     networks:
@@ -153,7 +215,6 @@ services:
       placement:
         constraints:
           - node.labels.name==fog2
-
 
   mqtt-broker_4:
     image: "eclipse-mosquitto:1.6.10"
