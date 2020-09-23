@@ -42,10 +42,13 @@ services:
         constraints:
           - node.labels.name==cloud
     command: dt-instance
+    
   mqtt-broker:
     image: "eclipse-mosquitto:1.6.10"
     networks:
       - default
+    volumes:
+      - ./mosquitto.conf:/mosquitto/config/mosquitto.conf  
     restart: always
     deploy:
       placement:
