@@ -47,14 +47,14 @@ services:
     networks:
       - default
     volumes:
-      - ./mosquitto.conf:/mosquitto/config/mosquitto.conf
+      - /mosquitto.conf:/mosquitto/config/mosquitto.conf
       - /mosquitto/log:/mosquitto/log
       - /mosquitto/data:/mosquitto/data
     restart: always
     deploy:
       placement:
         constraints:
-          - node.labels.name==cloud
+          - node.labels.name==fog2
   scylla-db:
     image: scylladb/scylla
     networks:
